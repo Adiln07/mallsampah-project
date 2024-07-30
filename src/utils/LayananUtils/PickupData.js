@@ -15,10 +15,25 @@ import Dropoff5 from "../../assets/Image/Layanan/DropOffFolder/Dropoff5.png"
 import Dropoff from "../../assets/Image/Layanan/Dropoff.jpg"
 
 import CompanyLogo from "../../assets/Image/logo/layananLogo/ms_company.svg"
-
+import Service1 from "../../assets/Image/Layanan/CompanyFolder/Service1.png"
+import Service2 from "../../assets/Image/Layanan/CompanyFolder/Service2.png"
+import Service3 from "../../assets/Image/Layanan/CompanyFolder/Service3.png"
 import Company from "../../assets/Image/Layanan/Company.jpg"
 
+import EventLogo from "../../assets/Image/logo/layananLogo/ms_event.svg"
+import Event1 from "../../assets/Image/Layanan/EventFolder/Event1.png"
+import Event2 from "../../assets/Image/Layanan/EventFolder/Event2.png"
+import Event3 from "../../assets/Image/Layanan/EventFolder/Event3.png"
+import Event from "../../assets/Image/Layanan/Event.jpg"
 
+import MspointLogo from "../../assets/Image/logo/layananLogo/ms_point.svg"
+import Mspoint1 from "../../assets/Image/Layanan/MspointsFolder/Mspoint1.png"
+import Mspoint2 from "../../assets/Image/Layanan/MspointsFolder/Mspoint2.svg"
+import Mspoints from "../../assets/Image/Layanan/Mspoints.png"
+
+import MsbillsLogo from "../../assets/Image/logo/layananLogo/ms_bills.svg"
+import Msbills1 from "../../assets/Image/Layanan/MsbillsFolder/Msbills1.png"
+import Msbills from "../../assets/Image/Layanan/Msbills.png"
 
 const pickupData = () =>([
     {
@@ -103,7 +118,114 @@ const pickupData = () =>([
         ]
 
     },
-    
+    {
+        id: 3,
+        name:"Company",
+        header:[
+            {
+                logo:CompanyLogo,
+                judul:"Company",
+                desk:"Daur ulang berlangganan untuk bisnis dan kantor, menciptakan bisnis ramah lingkungan bukan sesuatu yang mahal lagi, dapatkan gratis di Mallsampah.",
+                color:"bg-[#f57b31]",
+                gambar:Company
+            }
+        ],
+        data:[
+            {
+                title:"Isi Data usaha/perusahaan",
+                content: ["1. Masukkan nama perusahaan", "2. Pilih jenis usaha", "3. Masukkan alamat perusahaan"],
+                image:Service1,
+            },
+            {
+                title:"Pilih layanan",
+                content: ["1. Recyclable (Gratis), berlangganan layanan daur ulang untuk bisnis dan kantormu. Ciptakan zero waste untuk bisnismu", "2. Mixed Waste (Berbayar), bukan hanya sampah anorganik, sampah organik pun bisa kamu kelola dengan fitur Mixed waste"],
+                image:Service2,
+            },
+            {
+                title:"Lama Berlangganan",
+                content: ["1. Pilih lama berlangganan", "2. Lama berlangganan terdiri dari 6, 12, 18, hingga 24 Bulan"],
+                image:Service3,
+            },
+        ]
+
+    },
+    {
+        id: 4,
+        name:"Event",
+        header:[
+            {
+                logo:EventLogo,
+                judul:"Event",
+                desk:"Daftarkan eventmu di fitur ini untuk mengakses layanan daur ulang yang didesain khusus untuk event, atau layanan satu waktu.",
+                color:"bg-[#d6434c]",
+                gambar:Event
+            }
+        ],
+        data:[
+            {
+                title:"Isi data Event",
+                content: ["1. Masukkan nama event", "2. Masukkan alamat event", "3. Masukkan kisaran jumlah peserta"],
+                image:Event1,
+            },
+            {
+                title:"Pilih layanan",
+                content: ["1. Recyclable (Gratis), berlangganan layanan daur ulang untuk bisnis dan kantormu. Ciptakan zero waste untuk bisnismu", "2. Mixed Waste (Berbayar), bukan hanya sampah anorganik, sampah organik pun bisa kamu kelola dengan fitur Mixed waste"],
+                image:Event2,
+            },
+            {
+                title:"Pilih Jenis Sampah",
+                content: ["1. Pilih jenis sampah yang dihasilkan dalam event"],
+                image:Event3,
+            },
+        ]
+
+    },
+    {
+        id: 5,
+        name:"Mspoints",
+        header:[
+            {
+                logo:MspointLogo,
+                judul:"MS Points",
+                desk:"Mallsampah mengkonversi sampahmu menjadi mata uang digital yang dapat kamu belanjakan, atau tukarkan dengan beragam produk menarik.",
+                color:"bg-[#299E63]",
+                gambar:Mspoints
+            }
+        ],
+        data:[
+            {
+                title:"Reedem MS Point",
+                content: ["1. Kamu dapat menukarkan MS Poin dengan beragam produk dan layanan, seperti saldo Gopay, OVO, ShopeePay, voucher diskon, sedekah online dsb"],
+                image:Mspoint1,
+            },
+            {
+                title:"Share MS Point",
+                content: ["1. Kamu dapat mentransfer MS Points ke teman-temanmu yang juga menggunakan Mallsampah. transfer gratis dan saat itu juga"],
+                image:Mspoint2,
+            },
+        ]
+    },
+    {
+        id: 6,
+        name:"MS Bills",
+        header:[
+            {
+                logo:MsbillsLogo,
+                judul:"MS Bills ",
+                desk:"Kamu dapat menukarkan sampahmu dengan beragam produk digital seperti Token Listrik, Pulsa, PDAM, BPJS dan banyak lagi.",
+                color:"bg-[#f57b31]",
+                gambar:Msbills
+            }
+        ],
+        data:[
+            {
+                title:"Fitur akan segera dirilis",
+                content: [""],
+                image:Msbills1,
+            },
+        ]
+
+    },
 
 ])
 

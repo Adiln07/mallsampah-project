@@ -12,7 +12,7 @@ const LayananHome = () => {
     <div className="font-redhat py-10  m-auto  ">
       <h1 className=" text-black text-5xl font-bold xl:pl-36 lg:pl-8  lg:text-start text-center">Layanan</h1>
       <div className=" text-black flex flex-col md:grid grid-cols-2 gap-y-10 py-10 lg:w-[60em] md:w-[35em] m-auto">
-        <Link to="#">
+        <Link to="/Layanan/0">
           <div
             style={{
               boxShadow: "7px 10px 0px #d9d9d9 ",
@@ -25,7 +25,7 @@ const LayananHome = () => {
             </p>
           </div>
         </Link>
-        <Link to="#">
+        <Link to="/Layanan/4">
           <div
             style={{
               boxShadow: "7px 10px 0px #d9d9d9 ",
@@ -38,7 +38,7 @@ const LayananHome = () => {
             </p>
           </div>
         </Link>
-        <Link to="#">
+        <Link to="/Layanan/1">
           <div
             style={{
               boxShadow: "7px 10px 0px #d9d9d9 ",
@@ -51,7 +51,7 @@ const LayananHome = () => {
             </p>
           </div>
         </Link>
-        <Link to="#">
+        <Link to="/Layanan/5">
           <div
             style={{
               boxShadow: "7px 10px 0px #d9d9d9 ",
@@ -64,7 +64,7 @@ const LayananHome = () => {
             </p>
           </div>
         </Link>
-        <Link to="#">
+        <Link to="/Layanan/2">
           <div
             style={{
               boxShadow: "7px 10px 0px #d9d9d9 ",
@@ -77,7 +77,7 @@ const LayananHome = () => {
             </p>
           </div>
         </Link>
-        <Link to="#">
+        <Link to="/Layanan/3">
           <div
             style={{
               boxShadow: "7px 10px 0px #d9d9d9 ",
