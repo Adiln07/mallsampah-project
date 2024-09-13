@@ -12,7 +12,6 @@ import Business from "../assets/Image/logo/SolusiLogo/bussiness.svg";
 import Corporate from "../assets/Image/logo/SolusiLogo/corporate.svg";
 import Goverment from "../assets/Image/logo/SolusiLogo/government.svg";
 
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -22,9 +21,9 @@ const Header = () => {
       <header className="bg-white  text-black fixed w-full z-50 top-0">
         <nav className=" flex lg:justify-center justify-between items-center gap-48 W-[92%] py-4  ">
           <div>
-            <Link to="/">
+            <a href="/">
               <img src={Logo} alt="" className=" lg:w-48 w-42 pl-4 lg:pl-0" />
-            </Link>
+            </a>
           </div>
           <div
             className={`lg:static absolute  lg:min-h-fit min-h-[60vh] bg-white left-0 ${
@@ -53,59 +52,59 @@ const Header = () => {
                   tabIndex={0}
                   className=" hidden group-hover:block lg:absolute  w-[20em]  bg-white text-black mt-1"
                 >
-                  <Link to="/Layanan/0">
+                  <a href="/Layanan/0">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                       <div className="flex items-center px-5 ">
                         <img src={Pickup} alt="" className="w-8 lg:w-9" />
                         <h1 className="text-lg px-3">Pick Up</h1>
                       </div>
                     </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Layanan/1">
+                  <a href="/Layanan/1">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                       <div className="flex items-center px-5 ">
                         <img src={Dropoff} alt="" className="w-8 lg:w-9" />
                         <h1 className="text-lg px-3">Drop Off</h1>
                       </div>
                     </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Layanan/2">
+                  <a href="/Layanan/2">
                   <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                     <div className="flex items-center px-5 ">
                       <img src={Company} alt="" className="w-8 lg:w-9" />
                       <h1 className="text-lg px-3">Company</h1>
                     </div>
                   </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Layanan/3">
+                  <a href="/Layanan/3">
                   <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                     <div className="flex items-center px-5 ">
                       <img src={Event} alt="" className="w-8 lg:w-9" />
                       <h1 className="text-lg px-3">Event</h1>
                     </div>
                   </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Layanan/4">
+                  <a href="/Layanan/4">
                   <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                     <div className="flex items-center px-5 ">
                       <img src={Point} alt="" className="w-8 lg:w-9" />
                       <h1 className="text-lg px-3">Point</h1>
                     </div>
                   </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Layanan/5">
+                  <a href="/Layanan/5">
                   <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                     <div className="flex items-center px-5 ">
                       <img src={Bills} alt="" className="w-8 lg:w-9" />
                       <h1 className="text-lg px-3">Bills</h1>
                     </div>
                   </li>
-                  </Link>
+                  </a>
                 </ul>
               </li>
               <li className="group">
@@ -120,41 +119,41 @@ const Header = () => {
                   tabIndex={0}
                   className=" hidden group-hover:block lg:absolute  w-[20em]  bg-white text-black mt-1"
                 >
-                  <Link to="/Solusi/0">
+                  <a href="/Solusi/0">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                       <div className="flex items-center px-5 ">
                         <img src={Everyone} alt="" className="w-8 lg:w-9" />
                         <h1 className="text-lg px-3">Eveyone</h1>
                       </div>
                     </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Solusi/1">
+                  <a href="/Solusi/1">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                       <div className="flex items-center px-5 ">
                         <img src={Business} alt="" className="w-8 lg:w-9" />
                         <h1 className="text-lg px-3">Business</h1>
                       </div>
                     </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Solusi/2">
+                  <a href="/Solusi/2">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                       <div className="flex items-center px-5 ">
                         <img src={Corporate} alt="" className="w-8 lg:w-9" />
                         <h1 className="text-lg px-3">Corporate</h1>
                       </div>
                     </li>
-                  </Link>
+                  </a>
 
-                  <Link to="/Solusi/3">
+                  <a href="/Solusi/3">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
                       <div className="flex items-center px-5 ">
                         <img src={Goverment} alt="" className="w-8 lg:w-9" />
                         <h1 className="text-lg px-3">Goverment</h1>
                       </div>
                     </li>
-                  </Link>
+                  </a>
                 </ul>
               </li>
               <li>
