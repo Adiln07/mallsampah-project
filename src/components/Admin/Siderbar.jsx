@@ -1,9 +1,20 @@
+import axios from 'axios'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Siderbar = () => {
 
+    const Navigate = useNavigate()
     const [open, setOpen] = useState(false)
+
+    const Logout = async()=>{
+      try {
+        await axios.delete('http://localhost:5000/logout');
+        Navigate('/login')
+      } catch (error) {
+        console.log(error)
+      }
+  }
 
   return (
     <div
@@ -57,7 +68,7 @@ const Siderbar = () => {
                 </p>
               </Link>
             </div>
-          <div className="flex gap-5 w-[20em] cursor-pointer ">
+          <div className="flex gap-5 w-[20em] cursor-pointer  " onClick={Logout}>
               <div className=" text-white text-2xl ">
                  <ion-icon name="log-in-outline"></ion-icon>
               </div>

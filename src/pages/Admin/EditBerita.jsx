@@ -1,11 +1,53 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HeaderForm from '../../components/Admin/HeaderForm'
-
+import { useNavigate, useParams } from 'react-router-dom'
+import axios from 'axios'
 const EditBerita = () => {
 
     const [title, setTitle] = useState('')
     const [deskripsi, setDeskripsi] = useState('')
     const [date, setDate ] = useState('')
+    const [file, setFile ] = useState('')
+    const {id} = useParams();
+    const navigate = useNavigate();
+
+    useEffect(()=>{
+        getArticleById();
+      }, [])
+
+      const getArticleById = async()=>{
+        const response = await axios.get(`http://localhost:5000/articles/${id}`);
+        setTitle(response.data.judul);
+        setDeskripsi(response.data.deskripsi);
+        setDate(response.data.date);
+        setFile(response.data.image);
+    
+      };
+  
+      const loadImage = (e) =>{
+          const image = e.target.files[0];
+          setFile(image);
+      }
+  
+      const updateArticle = async(e) =>{
+          e.preventDefault();
+          const formData = new FormData();
+          formData.append("file", file);
+          formData.append("title", title);
+          formData.append("deskripsi", deskripsi);
+          formData.append("date", date);
+  
+          try {
+              await axios.patch(`http://localhost:5000/articles/${id}`, formData, {
+                  headers:{
+                      "Content-Type": "multipart/form-data"
+                  }
+              })
+              navigate('/Admin');
+          } catch (error) {
+              console.log(error)
+          }
+      }
 
   return (
     <div>
@@ -13,7 +55,7 @@ const EditBerita = () => {
 
         <div className="flex w-full justify-center items-center py-10 font-inter bg-[#a9a9a9]">
             <div className="lg:w-[55em] md:h-[41em] md:w-[45em] h-[38em] w-[21em] bg-[white] m-auto rounded-lg">
-                <form action="" className="">
+                <form action="" className="" onSubmit={updateArticle}>
                     <div className="lg:w-[50em] md:w-[40em] w-[20em]  m-auto md:mt-10 mt-10 flex flex-col gap-y-3">
                         <h1 className="md:text-4xl text-3xl font-bold  color-black">
                             Edit Berita 
@@ -44,7 +86,7 @@ const EditBerita = () => {
                             <input
                                 type="file"
                                 className="file-input md:h-[3.5em] border-[black] bg-[#a9a9a9] placeholder-black   w-full mt-1 flex items-center justify-center "
-                                // onChange={loadImage}
+                                onChange={loadImage}
                             />
                         </div>
 

@@ -10,6 +10,7 @@ import ManajemenBerita from "./pages/Admin/ManajemenBerita"
 import Berita from "./pages/Admin/Berita"
 import EditBerita from "./pages/Admin/EditBerita"
 import LoginAdmin from "./pages/Auth/LoginAdmin"
+import KontakPage from "./pages/KontakPage"
 
 
 
@@ -24,11 +25,12 @@ function App() {
         <Route path="/Layanan/:id" element={<LayananPage />} />
         <Route path="/Solusi/:id" element={<SolusiPage   />} />
         <Route path="/Berita" element={<BeritaPage   />} />
-        <Route path="/Berita-Content" element={<BeritaContent   />} />
+        <Route path="/Berita-Content/:id" element={<BeritaContent   />} />
         <Route path="/Admin" element={<ManajemenBerita   />} />
         <Route path="/Form-Berita" element={<Berita   />} />
-        <Route path="/Edit-Form-Berita" element={<EditBerita   />} />
+        <Route path="/Edit-Form-Berita/:id" element={<EditBerita   />} />
         <Route path="/Login" element={<LoginAdmin   />} />
+        <Route path="/Kontak" element={<KontakPage   />} />
       </Routes>
     </div>
   )
