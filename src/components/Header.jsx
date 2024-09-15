@@ -50,7 +50,7 @@ const Header = () => {
                 </a>
                 <ul
                   tabIndex={0}
-                  className=" hidden group-hover:block lg:absolute  w-[20em]  bg-white text-black mt-1"
+                  className=" hidden group-hover:block lg:absolute  w-[20em]  bg-white text-black"
                 >
                   <a href="/Layanan/0">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
@@ -117,7 +117,7 @@ const Header = () => {
                 </a>
                 <ul
                   tabIndex={0}
-                  className=" hidden group-hover:block lg:absolute  w-[20em]  bg-white text-black mt-1"
+                  className=" hidden group-hover:block lg:absolute  w-[20em]  bg-white text-black"
                 >
                   <a href="/Solusi/0">
                     <li className=" py-4 hover:bg-[#28AF5D] hover:text-white">
